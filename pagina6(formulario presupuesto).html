@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>APP Las Piramides - Presupuesto</title>
+    <link rel="stylesheet" href="css/pagina6.css">
+    <link rel="icon" href="img/LogoSoloSF.png">
+</head>
+<body>
+    <!-- Codigo de la cabecera -->
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            
+            <div class="logo">
+                <a href="index.html"><img src="img/LogoCompletoSF.png" alt="Logotipo"></a>
+            </div>
+
+            <div class="menu-navegacion">
+                <ul>
+                    <li><a href="/presentacion.html">Presentación</a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pagina3(tienda).html">Tienda</a></li>
+                    <li><a href="/pagina8(servicios).html">Servicios</a></li>
+                    <li><a href="/pagina9(Blog).html">Blog tecnológico</a></li>
+                    <li><a href="/pagina1(donde estamos).html">Contacto</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <br>
+        <h2>Formulario de presupuesto</h2>
+        <div class="bloque-formulario">
+            <div class="form">
+                <form action="php/presupuesto.php" method="get">
+                    <div id="campo">
+                            <label for="nombre" class="label">Nombre y Apellidos:</label>
+                            <input type="text" id="nombre" name="nombre" 
+                                class="nombre-email"
+                                required
+                                pattern="^[A-ZÁÉÍÓÚÑa-zñáéíóú ]{3,50}$" 
+                                title="Introduce nombre y apellidos (solo letras)">
+                    </div>
+<br>
+                    <div class="campo">
+                            <label for="email" class="label">Email de contacto:</label>
+                            <input type="email" id="email" name="email" 
+                                class="nombre-email"
+                                required 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                title="Introduce un email válido (ejemplo@dominio.com)">
+                    </div>
+                    <div class="prod">
+                        <label for="cpu">Cpu:</label>
+                        <select name="cpu" id="cpu">
+                            <option value="Intel i9 14gen">Intel i9 14gen</option>
+                            <option value="Intel i9 14gen">Intel i7 14gen</option>
+                            <option value="Ryzen 7 7800X3D">Ryzen 7 7800X3D</option>
+                            <option value="Ryzen 5 7600X">Ryzen 5 7600X</option>
+                        </select>
+</div>
+                    <div class="prod">
+                        <label for="disco">Disco:</label>
+                        <select name="Disco" id="Disco">
+                            <option value="Kington 500GB">Kington 500GB</option>
+                            <option value="Kington 1TB">Kington 1TB</option>
+                            <option value="Western digital 250GB">Western digital 250GB</option>
+                            <option value="Seagate Barracuda 8TB">Seagate Barracuda 8TB</option>
+                        </select>
+                    </div>
+                    <div class="prod">
+                        <label for="gpu">Grafica:</label>
+                        <select name="gpu" id="gpu">
+                            <option value="GTX 5050">GTX 5050</option>
+                            <option value="GTX 5060">GTX 5060</option>
+                            <option value="GTX 5070">GTX 5070</option>
+                            <option value="GTX 5080">GTX 5080</option>
+                        </select>
+                    </div>
+                    <div class="prod">
+                        <label for="gpu">Sistema Operativo:</label>
+                        <select name="SO" id="SO">
+                            <option value="Linux/otro">Linux/derivados</option>
+                            <option value="Windows">Windows</option>
+                        </select>
+                    </div>
+                    <div class="prod">
+                        <label for="presupuesto">presupuesto:</label>
+                        <select name="gpu" id="gpu">
+                            <option value="pres1">500-600</option>
+                            <option value="pres2">700-800</option>
+                            <option value="pres3">900-1000</option>
+                            <option value="pres4">1000-1100</option>
+                            <option value="pres5">1200-1300</option>
+                            <option value="pres6">1400-1500</option>
+                            <option value="pres7">1500-2000</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="uso">¿Que uso le dará usted al equipo?</label>
+<br><br>
+                        <textarea id="uso" name="uso" 
+                            maxlength="300" 
+                            required 
+                            placeholder="Escribe aquí el uso deseado..."></textarea>
+                    </div>
+<br>
+                    <div class="botones">
+                        <input type="reset" value="Borrar datos" id="boton-reset">
+                        <br><br>
+                        <input type="submit" value="Enviar información" id="boton-enviar">
+                    </div>
+                </form>
+            </div>
+            <img class="img" src="img/Cosas/Gracias.png">
+        </div>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="footer-texto">
+                <a class="enlaces" href="/pagina10(cookies).html">Cookies</a>
+                <a class="enlaces" href="/pagina7(preguntas frecuentes).html">Preguntas frecuentes</a>
+            </div>
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="img/LogoCompletoSF.png" alt="Logo APP Las Pirámides">
+                </a>
+            </div>
+
+            <div class="footer-redes">
+                <a href="https://facebook.com">
+                    <img src="img/ico/Logo_Facebook.png">
+                </a>
+                
+                <a href="https://instagram.com">
+                    <img src="img/ico/Logo_Instagram.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

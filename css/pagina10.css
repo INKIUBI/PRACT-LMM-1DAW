@@ -1,0 +1,210 @@
+/* Reseteo básico para evitar espacios en blanco */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* Blanco de fondo de la paleta */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* --- ESTILO DE LA CABECERA --- */
+.cabecera {
+    background-color: #F5F2E9;
+    border-bottom: 2px solid #BDBDBD; /* Borde gris de la paleta */
+    padding: 12px 0;
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    /* Flexbox para poner logo a la izquierda y menú a la derecha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px; /* Tamaño del logo */
+    width: 200px;
+}
+
+
+/* --- ESTILO DEL MENÚ --- */
+.menu-navegacion ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex;    /* Pone los elementos en fila */
+}
+
+.menu-navegacion li {
+    margin-left: 25px; /* Espacio entre cada enlace */
+}
+
+.menu-navegacion a {
+    text-decoration: none; /* Quita el subrayado de los links */
+    color: #333333;        /* Gris oscuro de la paleta */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ------------ */
+
+/* Introduccion */
+.introduccion{
+    background-color: #D6E5E8;  
+    display: flex;
+    justify-content: space-between;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #c8c8c8;
+}
+
+.introduccion h1{
+    font-size: 60px;
+    color: #315877;
+    padding-top: 40px;
+    margin-left: 150px;
+}
+
+.introduccion p{
+    font-size: 20px;
+    color:#858585;
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+/* ------------ */
+
+/* Comprension cookies */
+.bloque-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 60px;
+}
+
+.texto-cookies {
+    flex: 2;
+}
+
+.bloque-info h2{
+    font-size: 35px;
+    color: #315877;
+    margin-top: 50px;
+}
+
+.bloque-info p {
+    text-align: justify;
+    margin-right: 80px;
+    margin-top: 15px;
+}
+
+.imagen-cookie {
+    width: 250px;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.imagen-cookie img {
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+/* Tabla cookies */
+.tabla-cookies{
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+.tabla-cookies h2{
+    font-size: 30px;
+    color: #315877;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tabla-cookies th{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #D6E5E8; 
+}
+
+.tabla-cookies td{
+    padding: 15px;
+    font-size: 15px;
+}
+
+
+/* --- ESTILO DEL PIE DE PÁGINA --- */
+footer {
+    background-color: #F9F7F2;
+    border-top: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.contenedor-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     /* Centra todo el bloque en la pantalla */
+}
+
+.enlaces{
+    text-decoration: none underline;
+    font-size: 12px;
+    color: #757272;
+    margin-left: 10px;
+}
+
+.preguntas{
+    padding-left: 40px;
+}
+
+.footer-texto, .footer-logo, .footer-redes {
+    flex: 1;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-redes a {
+    font-size: 0px;
+    margin-left: 30px;
+    margin-right: 10px;
+}  

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* --- FLEX PARA EMPUJAR AL FOOTER ABAJO --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100 % ancho de la ventana*/
+}
+
+main{
+    flex: 1; /* Esto empuja al footer al pie de pagina */
+}
+
+/* --- ESTILO DE LA CABECERA --- */
+.cabecera {
+    background-color: #f5f2e9;
+    border-bottom: 2px solid #BDBDBD;
+    padding: 12px 0;
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    /* Poner logo a la izquierda y menú a la derecha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: 200px;
+}
+
+/* --- ESTILO DEL MENÚc--- */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacion li {
+    margin-left: 25px;
+}
+
+
+.menu-navegacion a {
+    text-decoration: none; /* Quita el estilo por defecto de los enlaces */
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* --- ESTILO BODY --- */
+body {
+    background-color: #0676cb78;
+    font-family: Arial, sans-serif;
+}
+
+.faq {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pregunta {
+    background-color: #f5f2e9;
+    border: 3px solid #BDBDBD;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.pregunta h3 {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.pregunta p {
+    color: #555;
+    font-size: 15px;
+}
+
+/*pie de pagina*/
+footer {
+    background-color: #F9F7F2;
+    border-top: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     /* Centra todo el bloque en la pantalla */
+}
+
+.enlaces{
+    text-decoration: none underline;
+    color: #757272;
+    margin-left: 10px;
+}
+
+.Preguntas{
+    padding-left: 30px;
+}
+
+.footer-texto, .footer-logo, .footer-redes {
+    flex: 1;
+}
+
+.footer-texto {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-redes a {
+    font-size: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}

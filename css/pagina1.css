@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* --- FLEX PARA EMPUJAR AL FOOTER ABAJO --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100 % ancho de la ventana*/
+}
+
+main{
+    flex: 1; /* Esto empuja al footer al pie de pagina */
+}
+
+/* --- ESTILO DE LA CABECERA --- */
+.cabecera {
+    background-color: #f5f2e9;
+    border-bottom: 2px solid #BDBDBD;
+    padding: 12px 0;
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    /* Poner logo a la izquierda y menú a la derecha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: 200px;
+}
+
+/* --- ESTILO DEL MENÚc--- */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacion li {
+    margin-left: 25px;
+}
+
+
+.menu-navegacion a {
+    text-decoration: none; /* Quita el estilo por defecto de los enlaces */
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* -- BODY --*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;      /* color de fondo gris claro */
+ 
+ 
+    text-align: center;             /* centramos el texto */
+    color: #333;                    /* color del texto gris oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.contenedor {
+    background-color: #0676cb78;
+    width: 1200px;               /* ancho del cuadrado */
+    margin: 40px auto;          /* centrado */
+    padding: 20px;              /* espacio interior */
+    border-radius: 10px;        /* esquinas redondeadas */
+}
+iframe {
+    border: 20px solid white;   /* grosor, tipo y color */
+    border-radius: 10px;       /* esquinas redondeadas */
+}
+
+/* --- ESTILO DEL PIE DE PÁGINA --- */
+footer {
+    background-color: #F9F7F2;
+    border-top: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     /* Centra todo el bloque en la pantalla */
+}
+
+.enlaces{
+    text-decoration: none underline;
+    color: #757272;
+    margin-left: 10px;
+}
+
+.Preguntas{
+    padding-left: 30px;
+}
+
+
+.footer-texto, .footer-logo, .footer-redes {
+    flex: 1;
+}
+
+.footer-texto {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-redes a {
+    font-size: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}

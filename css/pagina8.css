@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- FLEX PARA EMPUJAR AL FOOTER ABAJO --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100 % ancho de la ventana*/
+}
+
+main{
+    flex: 1; /* Esto empuja al footer al pie de pagina */
+}
+
+/* --- ESTILO DE LA CABECERA --- */
+.cabecera {
+    background-color: #f5f2e9;
+    border-bottom: 2px solid #BDBDBD;
+    padding: 12px 0;
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: 200px;
+}
+
+/* --- ESTILO DEL MENÚ --- */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacion li {
+    margin-left: 25px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-navegacion:hover {
+    color: red;
+}
+
+/* CUERPO DE LA PAGINA*/
+
+.contenedor-servicios {
+    width: 1000px;
+    margin: 20px auto; 
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #5D7E99; /* Línea decorativa azul */
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+/* Caja de cada servicio */
+.tarjeta-servicio {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #5c5c5c;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/*SERVICIOS*/
+
+/* Espacio para el icono */
+.icono-servicio {
+    width: 100px;
+    text-align: center;
+}
+
+.icono-servicio img {
+    width: 60px;
+    height: auto;
+}
+
+/* Texto del servicio */
+.info-servicio {
+    padding: 5px;
+    flex: 1;
+}
+
+.info-servicio h2 { /*Titulo del servico*/
+    color: #1a2a5d;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.info-servicio p {  /*Descripcion del servicio*/
+    color: #333333;
+    font-size: 15px;
+    margin: 0;
+}
+
+.info-precio{
+    text-align: center;
+    min-width: 80px;
+}
+
+.precio-texto{
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+/* Botón de contacto  (Atencion al cliente)*/
+.boton-contacto {
+    background-color: #1a2a5d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-contacto:hover{
+    background-color: white;
+    color: #1a2a5d;
+    border: 1px solid #1a2a5d;
+}
+
+/* Quitar subrayado del enlace */
+.enlace-contacto {
+    text-decoration: none;
+}
+
+/*PIE DE PAGINA*/
+footer {
+    background-color: #F9F7F2;
+    border-top: 2px solid #ccc;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     /* Centra todo el bloque en la pantalla */
+}
+
+.enlaces{
+    text-decoration: none underline;
+    color: #757272;
+    margin-left: 10px;
+}
+.pregunta{
+    padding-left: 30px;
+}
+
+
+.footer-texto, .footer-logo, .footer-redes {
+    flex: 1;
+}
+
+.footer-texto {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-redes a {
+    font-size: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}

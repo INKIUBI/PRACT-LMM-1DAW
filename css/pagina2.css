@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* --- FLEX PARA EMPUJAR AL FOOTER ABAJO --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100 % ancho de la ventana*/
+}
+
+main{
+    flex: 1; /* Esto empuja al footer al pie de pagina */
+}
+
+/* --- ESTILO DE LA CABECERA --- */
+.cabecera {
+    background-color: #f5f2e9;
+    border-bottom: 2px solid #BDBDBD;
+    padding: 12px 0;
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    /* Poner logo a la izquierda y menú a la derecha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: 200px;
+}
+
+/* --- ESTILO DEL MENÚc--- */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacion li {
+    margin-left: 25px;
+}
+
+
+.menu-navegacion a {
+    text-decoration: none; /* Quita el estilo por defecto de los enlaces */
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* --- BODY ---*/
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    padding: 10px;
+    background-color: #0676cb78;
+    flex-grow: 1;
+}
+
+/* QUIÉNES SOMOS */
+.quienes-somos {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.quienes-somos h1 {
+    font-size: 50px;
+    color: #315877;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* EQUIPO */
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;   
+    margin: 0 auto;      /* centrar todo el bloque */
+}
+
+.miembro {
+    background-color: white;
+    width: 200px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.miembro img {
+    width: 120px;
+    height: 120px;
+    margin-top: 25px;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.miembro h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.miembro ul {
+    font-size: 12px;
+    text-align: justify;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+
+/* Boton para ir a personal */
+.boton-comparativa{
+    background-color: #c8c8c8cf;
+    font-size: 15px;
+    color: #1a2a5d;
+    border: 3px solid #f5f2e9;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+    /* PARA CENTRAR BOTON */
+    display: block;
+    margin: auto;
+}
+
+#boton-sin-subrayado{
+    text-decoration: none;
+}
+
+.contenedor-botones-nacho{
+    display: flex;
+    justify-content: space-between; /* Esto empuja uno a cada punta */
+    align-items: center; /* Para que queden alineados verticalmente */
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.boton-nacho-contacto{
+    background-color: #c8c8c8cf;
+    font-size: 15px;
+    color: #1a2a5d;
+    border: 3px solid #f5f2e9;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.boton-nacho-formulario{
+    background-color: #c8c8c8cf;
+    font-size: 15px;
+    color: #1a2a5d;
+    border: 3px solid #f5f2e9;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+/* --- ESTILO DEL PIE DE PÁGINA --- */
+footer {
+    background-color: #F9F7F2;
+    border-top: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     /* Centra todo el bloque en la pantalla */
+}
+
+.enlaces{
+    text-decoration: none underline;
+    color: #757272;
+    margin-left: 10px;
+}
+
+.Preguntas{
+    padding-left: 30px;
+}
+
+
+.footer-texto, .footer-logo, .footer-redes {
+    flex: 1;
+}
+
+.footer-texto {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+.footer-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-redes a {
+    font-size: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
